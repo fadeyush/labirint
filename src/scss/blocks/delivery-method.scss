@@ -18,7 +18,77 @@
 }
 
 @media (min-width: $desktop-width) {
-  .method__buttons {
-    display: block;
+  .method__label {
+    width: 489px;
+    height: 152px;
   }
+
+  .delivery__item {
+    position: relative;
+  }
+
+  .delivery__item-price {
+    position: absolute;
+    right: 20px;
+    top: 62px;
+    font-size: 22px;
+    line-height: 28px;
+  }
+
+  .order__delivery {
+    position: relative;
+  }
+
+  .method__buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 4px;
+
+    position: absolute;
+    top: 40px;
+    right: 82px;
+  }
+
+  .method__button {
+    box-sizing: border-box;
+
+    border: 1px solid $item-border;
+    border-radius: 4px;
+    background-color: $white;
+
+    width: 40px;
+    height: 40px;
+
+    padding: 0;
+    margin: 0;
+
+    cursor: pointer;
+
+    position: relative;
+  }
+
+  .method__button::before {
+    content: '';
+    position: absolute;
+    top: 9px;
+    left: 15px;
+
+    width: 13px;
+    height: 21px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: url(/img/Vector.png);
+  }
+
+  .method__button--prev::before {
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+    left: 11px;
+    opacity: 0.25;
+  }
+
+  .method__new {
+    margin-top: 14px;
+    margin-bottom: 30px;
+  }  
+
 }

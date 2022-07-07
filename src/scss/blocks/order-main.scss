@@ -50,3 +50,45 @@
 
   cursor: pointer;
 }
+
+@media (min-width: $desktop-width) {
+  .order {
+    padding: 0;
+
+    margin-bottom: 119px;
+  }
+
+  .order__wrapper {
+    width: 1117px;
+
+    padding: 0;
+    padding-left: 43px;
+
+    border: 1px solid $border-form-color;
+  }
+
+  .order__header {
+    width: 1743px;
+
+    font-size: 35px;
+    line-height: 44px;
+    font-weight: 700;
+
+    margin-top: 48px;
+    margin-bottom: 19px;
+
+    padding-left: 43px;
+  }
+
+  .order__button {
+    font-size: 22px;
+    line-height: 28px;
+  }
+
+  .main__wrapper {
+    display: flex;
+
+    width: 1743px;
+    margin: 0 auto;
+  }
+}

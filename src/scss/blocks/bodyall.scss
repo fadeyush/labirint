@@ -10,6 +10,8 @@ body {
 
   color: $main-text-color;
   background-color: $backgriund-main;
+
+  // overflow: hidden;
 }
 
 ul {
@@ -43,7 +45,7 @@ p {
 
 @media (min-width: $desktop-width) {
   body {
-    background-size: 1743px auto;
+    background-size: 1905px auto;
   }
 }
 

@@ -40,3 +40,42 @@
 .delivery__item-info {
   box-sizing: border-box;
 }
+
+@media (min-width: $desktop-width) {
+  .delivery__header {
+    font-size: 29px;
+    line-height: 37px;
+
+    padding-top: 40px;
+    padding-bottom: 17px;
+  }
+
+  .delivery__item-labirint {
+    order: 1;
+  }
+
+  .delivery__item-header {
+    font-size: 22px;
+    line-height: 28px
+  }
+
+  .delivery__item label {
+    padding: 20px 20px;
+    cursor: pointer;
+  }
+
+  .delivery__item-labirint label {
+    padding-top: 34px;
+  }
+
+  .delivery__item-info {
+    font-size: 22px;
+    line-height: 28px;
+    color: $primary-text-color
+  }
+
+  .delivery__list {
+    gap: 14px;
+  }
+  
+}

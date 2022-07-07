@@ -9,7 +9,7 @@
 .user__new {
   position: absolute;
 
-  top: 0;
+  top: -27px;
   right: 0;
 }
 
@@ -20,7 +20,7 @@
   margin-bottom: 8px;
 }
 
-.user__name {
+.user__select {
   border: 1px solid #D6D6D6;
   border-radius: 4px;
 
@@ -29,10 +29,9 @@
   padding-right: 45px;
   padding-bottom: 16px;
 
-  width: 328px;
-  height: 69px;
-
   background-color: $white;
+
+  height: 69px;
 
   font: inherit;
   color: $main-text-color;
@@ -45,7 +44,18 @@
 
   appearance: none;
   background: url('/img/arrow.alt.down.png') no-repeat;
+}
+
+.user__name {
+  width: 328px;
+
   background-position: 293px 31px;
+}
+
+.user__phone {
+  width: 210px;
+
+  background-position: 175px 31px;
 }
 
 .user__item {
@@ -72,34 +82,82 @@
   padding-top: 16px;
 }
 
-.user__phone {
-  border: 1px solid $item-border;
-  border-radius: 4px;
-
-  padding-left: 16px;
-  padding-top: 33px;
-  padding-right: 45px;
-  padding-bottom: 16px;
-
-  width: 210px;
-  height: 69px;
-
-  background-color: $white;
-
-  font: inherit;
-  color: $main-text-color;
-  font-size: 17px;
-  line-height: 20px;
-  font-weight: 700;
-  letter-spacing: 0.13px;
-
-  box-sizing: border-box;
-
-  appearance: none;
-  background: url('/img/arrow.alt.down.png') no-repeat;
-  background-position: 175px 31px;
-}
-
 .phone__new {
   text-align: left;
+}
+
+@media (min-width: $desktop-width) {
+  .order__user {
+    margin-top: 30px;
+
+    margin-bottom: 0;
+  }
+
+  .user__header {
+    font-size: 29px;
+    line-height: 37px;
+
+    margin-bottom: 14px;
+  }
+
+  .user__new {
+    position: static;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+  }
+
+  .phone__new {
+    text-align: left;
+    margin: 0;
+    padding: 0;
+  }
+
+  .user__list {
+    display: flex;
+    gap: 14px;
+  }
+
+  .user__item {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+
+    margin-bottom: 51px;
+  }
+
+  .user__select {
+    padding-left: 14px;
+    padding-top: 34px;
+    padding-right: 58px;
+    padding-bottom: 12px;
+
+    height: 74px;
+
+    font-size: 22px;
+    line-height: 28px
+  }
+
+  .user__name {
+    width: 572px;
+
+    background-position: 539px 32px;
+  }
+
+  .user__phone {
+    width: 287px;
+
+    background-position: 256px 32px;
+  }
+
+  .user__info {
+    font-size: 17px;
+    line-height: 21px;
+
+    padding-top: 8px;
+    padding-left: 14px;
+  }
+  
+
+
 }
