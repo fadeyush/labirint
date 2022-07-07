@@ -1,4 +1,14 @@
 .order {
+  padding: 0px 16px;
+
+  overflow: hidden;
+
+  box-sizing: border-box;
+
+  margin-bottom: 118px;
+}
+
+.order__wrapper {
   width: 360px;
   margin: 0 auto;
 
@@ -9,6 +19,8 @@
   overflow: hidden;
 
   box-sizing: border-box;
+
+  border-bottom: 1px solid $border-form-color;
 }
 
 .order__header {

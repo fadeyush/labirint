@@ -14,132 +14,153 @@
   <main>
     <h1 class="order__header">Оформление заказа</h1>
     <form class="order" method="post">
+      <div class="order__wrapper">
 
-      <section class="order__delivery">
+        <section class="order__delivery">
 
-        <h2 class="delivery__header">Доставка</h2>
+          <h2 class="delivery__header">Доставка</h2>
 
-        <fieldset class="delivery__method">
+          <fieldset class="delivery__method">
 
-          <ul class="delivery__list">
+            <ul class="delivery__list">
 
-            <li class="delivery__item delivery__item--active">
-              <label class="method__label">
-                <input type="radio" name="method">
-                <div class="method__wrapper">
-                  <p class="delivery__item-header">Лабиринт, курьер — 25 сен.,
-                  <p class="delivery__item-price">+200 ₽</p></p>
-                  <p class="delivery__item-info">ул. Алексея Алексеева, 194 Б, Москва, 123456</p>
-                </div>
-              </label>
-            </li>
+              <li class="delivery__item delivery__item--active">
+                <label class="method__label">
+                  <input type="radio" name="method">
+                  <div class="method__wrapper">
+                    <p class="delivery__item-header">Лабиринт, курьер — 25 сен.,
+                      <p class="delivery__item-price">+200 ₽</p>
+                    </p>
+                    <p class="delivery__item-info">ул. Алексея Алексеева, 194 Б, Москва, 123456</p>
+                  </div>
+                </label>
+              </li>
 
-            <li class="delivery__item">
-              <label class="method__label">
-                <input type="radio" name="method" checked>
-                <div class="method__wrapper">
-                  <p class="delivery__item-header">Почта России, курьер —</p>
-                  <p class="delivery__item-price">24-26 сент. +367 ₽</p>
-                  <p class="delivery__item-info">ул. Академика Королева, 73/3, Петропавловск- Камчатский, 683000</p>
-                </div>
-              </label>
-            </li>
+              <li class="delivery__item">
+                <label class="method__label">
+                  <input type="radio" name="method" checked>
+                  <div class="method__wrapper">
+                    <p class="delivery__item-header">Почта России, курьер —</p>
+                    <p class="delivery__item-price">24-26 сент. +367 ₽</p>
+                    <p class="delivery__item-info">ул. Академика Королева, 73/3, Петропавловск- Камчатский, 683000</p>
+                  </div>
+                </label>
+              </li>
 
-           
 
-          </ul>
 
-          <div class="method__buttons">
-            <button class="method__button method__button--prev"></button>
-            <button class="method__button method__button--next"></button>
-          </div>
+            </ul>
 
-          <button class="order__button method__new">Выбрать новое место и способ</button>
-
-        </fieldset>
-
-        <fieldset class="delivery__date">
-
-          <ul class="delivery__list">
-
-            <li class="delivery__item delivery__item--active">
-              <label class="date__label">
-                <input type="radio" name="date" checked>
-                <p class="delivery__item-header">вт, 25 сен</p>
-                <p class="delivery__item-info">10:00–19:00</p>
-              </label>
-            </li>
-
-            <li class="delivery__item">
-              <label class="date__label">
-                <input type="radio" name="date">
-                <p class="delivery__item-header">ср, 26 сен</p>
-                <p class="delivery__item-info">10:00–19:00</p>
-              </label>
-            </li>
-          </ul>
-
-          <button class="order__button date__new">Другие дата и время</button>
-        </fieldset>
-
-        <fieldset class="delivery__checkbox">
-
-          <ul class="delivery-checkbox__list">
-
-            <li class="delivery-checkbox__item delivery-checkbox__item--first">
-              <label class="delivery-checkbox__label">
-                <input class="delivery__item-info" type="checkbox" name="notification" checked>                
-                <span class="delivery-checkbox__info">Viber/СМС уведомления о статусе заказа</span>
-              </label>
-            </li>
-
-            <li class="delivery-checkbox__item">
-              <label class="delivery-checkbox__label">
-                <input class="delivery__item-info" type="checkbox" name="contactless">
-                <span class="delivery-checkbox__info">Оставить у двери (бесконтактная доставка)</span>
-              </label>
-            </li>
-
-          </ul>
-
-        </fieldset>
-
-      </section>
-
-      <section class="order__user">
-
-        <h2 class="user__header">Получатель</h2>
-
-        <ul class="user__list">
-
-          <li class="user__item">
-            <span class="user__info">Имя и фамилия, как в паспорте</span>
-            <select class="user__name" name="user-name">
-              <option>Константин Константинопольский</option>
-            </select>
-
-            
-          </li>
-
-          <button class="order__button user__new">Новый получатель</button>
-
-          <li class="user__item user__item--phone">
-            <div class="user-item__wrapper">
-            <p class="user__info">Мобильный телефон</p>
-            <select class="user__phone" name="user-phone">
-              <option>+7 910 234-56-78</option>
-            </select>
+            <div class="method__buttons">
+              <button type="button" class="method__button method__button--prev"></button>
+              <button type="button" class="method__button method__button--next"></button>
             </div>
 
-            <button class="order__button phone__new">Новый телефон</button>
-          </li>
+            <button type="button" class="order__button method__new">Выбрать новое место и способ</button>
 
-        </ul>
+          </fieldset>
 
-      </section>
+          <fieldset class="delivery__date">
 
-      <section class="order__summary">
-        <h2 class="summary__header">В заказе 4 товара <span class="summary__weight">(2 кг)</span></h2>
+            <ul class="delivery__list">
+
+              <li class="delivery__item delivery__item--active">
+                <label class="date__label">
+                  <input type="radio" name="date" checked>
+                  <p class="delivery__item-header">вт, 25 сен</p>
+                  <p class="delivery__item-info">10:00–19:00</p>
+                </label>
+              </li>
+
+              <li class="delivery__item">
+                <label class="date__label">
+                  <input type="radio" name="date">
+                  <p class="delivery__item-header">ср, 26 сен</p>
+                  <p class="delivery__item-info">10:00–19:00</p>
+                </label>
+              </li>
+            </ul>
+
+            <button type="button" class="order__button date__new">Другие дата и время</button>
+          </fieldset>
+
+          <fieldset class="delivery__checkbox">
+
+            <ul class="delivery-checkbox__list">
+
+              <li class="delivery-checkbox__item delivery-checkbox__item--first">
+                <label class="delivery-checkbox__label">
+                  <input class="delivery__item-info" type="checkbox" name="notification" checked>
+                  <span class="delivery-checkbox__info">Viber/СМС уведомления о статусе заказа</span>
+                </label>
+              </li>
+
+              <li class="delivery-checkbox__item">
+                <label class="delivery-checkbox__label">
+                  <input class="delivery__item-info" type="checkbox" name="contactless">
+                  <span class="delivery-checkbox__info">Оставить у двери (бесконтактная доставка)</span>
+                </label>
+              </li>
+
+            </ul>
+
+          </fieldset>
+
+        </section>
+
+        <section class="order__user">
+
+          <h2 class="user__header">Получатель</h2>
+
+          <ul class="user__list">
+
+            <li class="user__item">
+              <span class="user__info">Имя и фамилия, как в паспорте</span>
+              <select class="user__name" name="user-name">
+                <option>Константин Константинопольский</option>
+              </select>
+
+
+            </li>
+
+            <button type="button" class="order__button user__new">Новый получатель</button>
+
+            <li class="user__item user__item--phone">
+              <div class="user-item__wrapper">
+                <p class="user__info">Мобильный телефон</p>
+                <select class="user__phone" name="user-phone">
+                  <option>+7 910 234-56-78</option>
+                </select>
+              </div>
+
+              <button type="button" class="order__button phone__new">Новый телефон</button>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </div>
+
+      
+
+        <section class="order__footer">
+          <div class="order-footer__wrapper">
+          <div class="order__footer-summary">
+            <p class="footer-summary__name">К оплате: <span class="mobile-no">на сайте</span><span
+                class="footer-summary__price">21 072 ₽</span></p>
+            <button type="button" class="order__button button__more">Подробнее</button>
+          </div>
+
+          <button class="order__button button__footer" type="submit">Оформить и оплатить</button>
+          </div>
+        </section>
+      
+    </form>
+
+    <section class="order__summary order__summary--closed">
+      <div class="summary__wrapper">
+        <h2 class="summary__header">В заказе 5 товаров <span class="summary__weight">(2 кг)</span></h2>
 
         <ul class="summary__list">
           <li class="summary__item">
@@ -147,30 +168,47 @@
             <p class="summary__item-price">29 456 ₽</p>
           </li>
 
-          <li class="summary__item">
+          <li class="summary__item summary__item--second">
             <p class="summary__item-name">Все скидки</p>
             <p class="summary__item-price">–7 732 ₽</p>
           </li>
 
-          <li class="summary__item">
+          <li class="summary__item summary__item--mobile">
+            <p class="summary__item-name">К оплате:</p>
+            <p class="summary__item-price">21 072 ₽</p>
+          </li>
+
+          <li class="summary__item summary__item--desktop">
             <p class="summary__item-name">Скидка за предоплату</p>
             <p class="summary__item-price">–3%</p>
           </li>
         </ul>
-      </section>
+      </div>
 
-      <section class="order__footer">
-        <div class="order__footer-summary">
-          <p class="footer-summary__name">К оплате: <span class="mobile-no">на сайте</span><span class="footer-summary__price">21 072 ₽</span></p>
-        </div>
-
-
-        <button class="order__button button__footer" type="submit">Оформить и оплатить</button>
-      </section>
-
-    </form>
+      <button class="order__button summary__button" type="button">Закрыть подробности</button>
+    </section>
 
   </main>
+
+  <script>
+    const summaryToggleOpen = document.querySelector(".button__more");
+    const summaryToggleClose = document.querySelector(".summary__button");
+    const summarySection = document.querySelector(".order__summary");
+
+    summaryToggleOpen.addEventListener("click", function () {
+      if (summarySection.classList.contains("order__summary--closed")) {
+        summarySection.classList.remove("order__summary--closed");
+        summarySection.classList.add("order__summary--opened");
+      };
+    });
+    summaryToggleClose.addEventListener("click", function () {
+      if (summarySection.classList.contains("order__summary--opened")) {
+        summarySection.classList.remove("order__summary--opened");
+        summarySection.classList.add("order__summary--closed");
+      }
+
+    });
+  </script>
 
 </body>
 
