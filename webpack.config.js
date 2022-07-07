@@ -17,12 +17,14 @@ module.exports = {
 				miniCss.loader,
 				'css-loader',
 				'sass-loader',
+				"postcss-loader",
 			]
 		}]
 	},
 	plugins: [
 		new miniCss({
 			filename: '../style.css',
-		})
+		}),
+		require('autoprefixer')
 	]
 };
