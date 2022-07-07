@@ -1,0 +1,105 @@
+.order__user {
+  margin-top: 32px;
+
+  position: relative;
+
+  margin-bottom: 24px;
+}
+
+.user__new {
+  position: absolute;
+
+  top: 0;
+  right: 0;
+}
+
+.user__header {
+  font-weight: 700;
+  font-size: 21px;
+
+  margin-bottom: 8px;
+}
+
+.user__name {
+  border: 1px solid #D6D6D6;
+  border-radius: 4px;
+
+  padding-left: 16px;
+  padding-top: 33px;
+  padding-right: 45px;
+  padding-bottom: 16px;
+
+  width: 328px;
+  height: 69px;
+
+  background-color: $white;
+
+  font: inherit;
+  color: $main-text-color;
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: 700;
+  letter-spacing: 0.13px;
+
+  box-sizing: border-box;
+
+  appearance: none;
+  background: url('/img/arrow.alt.down.png') no-repeat;
+  background-position: 293px 31px;
+}
+
+.user__item {
+  position: relative;
+
+  margin-bottom: 8px;
+
+  &--phone {
+    display: flex;
+    gap: 16px;
+  }
+}
+
+.user__info {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  letter-spacing: 0.13px;
+
+  color: $user-info-color;
+
+  padding-left: 16px;
+  padding-top: 16px;
+}
+
+.user__phone {
+  border: 1px solid $item-border;
+  border-radius: 4px;
+
+  padding-left: 16px;
+  padding-top: 33px;
+  padding-right: 45px;
+  padding-bottom: 16px;
+
+  width: 210px;
+  height: 69px;
+
+  background-color: $white;
+
+  font: inherit;
+  color: $main-text-color;
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: 700;
+  letter-spacing: 0.13px;
+
+  box-sizing: border-box;
+
+  appearance: none;
+  background: url('/img/arrow.alt.down.png') no-repeat;
+  background-position: 175px 31px;
+}
+
+.phone__new {
+  text-align: left;
+}

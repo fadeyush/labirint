@@ -1,0 +1,25 @@
+$desktop-width: 1600px;
+
+$white:#ffffff;
+$button-border: #E01D1D;
+$main-text-color: #333333;
+$primary-text-color: #1A1A1A;
+$blue: #065CC2;
+$backgriund-main: #F2F2F2;
+$backgriund-footer: #F8F8F8;
+$item-border: #D6D6D6;
+$user-info-color: #6E6E73;;
+
+// @mixin linear-gradient {
+//   background: linear-gradient(0deg, #EC0002, #EC0002), linear-gradient(91.91deg, rgba(208, 38, 38, 0) 0%, #D02626 99.65%), #FF0000;
+// } 
+
+.mobile-no {
+  display: none;
+}
+
+@media (min-width: $desktop-width) {
+  .mobile-no {
+    display: inline-block;
+  }
+}

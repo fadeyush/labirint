@@ -1,0 +1,46 @@
+.delivery-checkbox__item {
+  font-size: 17px;
+  line-height: 21px;
+
+  &--first {
+    margin-bottom: 16px;
+  }
+}
+
+
+.delivery__item-info {
+  margin: 0;
+  padding: 0;
+}
+
+.delivery-checkbox__info {
+  display: flex;
+  gap: 10px;
+}
+
+.delivery-checkbox__label>input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.delivery-checkbox__label>span::before {
+  cursor: pointer;
+  content: '';
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  padding-right: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url('/img/confirm.png');
+  background-color: $blue;
+  opacity: 0.3;
+  border-radius: 2px;
+  box-sizing:border-box;
+  border-color: $main-text-color;
+}
+
+.delivery__item-info:checked+span::before {
+  opacity: 1;
+}

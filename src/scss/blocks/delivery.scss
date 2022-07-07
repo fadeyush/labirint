@@ -1,0 +1,42 @@
+.delivery__header {
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+
+  padding-top: 24px;
+  padding-bottom: 8px;
+}
+
+.delivery__list {
+  display: flex;
+  gap: 8px;
+}
+
+.delivery__item input[type=radio] {
+  display: none;
+}
+
+.delivery__item label {
+  box-sizing: border-box;
+  display: inline-block;
+  padding: 16px 20px;
+
+  border: 1px solid $item-border;
+  border-radius: 4px;
+}
+
+.delivery__item--active label {
+  border: 2px solid $blue;
+  border-radius: 4px;
+}
+
+.delivery__item-header {
+  box-sizing: border-box;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 21px;
+}
+
+.delivery__item-info {
+  box-sizing: border-box;
+}
