@@ -23,32 +23,26 @@
 
             <fieldset class="delivery__method">
 
-              <ul class="delivery__list">
+              <ul class="delivery__list list__method">
 
-                <li class="delivery__item delivery__item-labirint delivery__item--active">
-                  <label class="method__label">
-                    <input type="radio" name="method">
-                    <div class="method__wrapper">
-                      <p class="delivery__item-header">Лабиринт, курьер — 25 сен.<span class="desktop-no">,</span>
-                        <p class="delivery__item-price"><span class="desktop-no">+20</span>0 ₽</p>
-                      </p>
-                      <p class="delivery__item-info desktop-no">ул. Алексея Алексеева, 194 Б, Москва, 123456</p>
-                      <p class="delivery__item-info mobile-no">Можайское шоссе, д. 21, кв. 50,<br> Москва, 121471</p>
-                    </div>
-                  </label>
+                <li class="delivery__item item__method delivery__item-labirint">
+                  <div class="method__wrapper">
+                    <p class="delivery__item-header">Лабиринт, курьер — 25 сен.<span class="desktop-no">,</span>
+                      <p class="delivery__item-price"><span class="desktop-no">+20</span>0 ₽</p>
+                    </p>
+                    <p class="delivery__item-info desktop-no">ул. Алексея Алексеева, 194 Б, Москва, 123456</p>
+                    <p class="delivery__item-info mobile-no">Можайское шоссе, д. 21, кв. 50,<br> Москва, 121471</p>
+                  </div>
                 </li>
 
-                <li class="delivery__item delivery__item-post">
-                  <label class="method__label">
-                    <input type="radio" name="method" checked>
-                    <div class="method__wrapper">
-                      <p class="delivery__item-header">Почта России, курьер —<span class="mobile-no"> 24-26 сент.</span>
-                      </p>
-                      <p class="delivery__item-price"><span class="desktop-no">24-26 сент. </span>+367 ₽</p>
-                      <p class="delivery__item-info">ул. Академика Королева, 73/3, Петропавловск- Камчатский, <br
-                          class="mobile-no"> 683000</p>
-                    </div>
-                  </label>
+                <li class="delivery__item delivery__item-post item__method">
+                  <div class="method__wrapper">
+                    <p class="delivery__item-header">Почта России, курьер —<span class="mobile-no"> 24-26 сент.</span>
+                    </p>
+                    <p class="delivery__item-price"><span class="desktop-no">24-26 сент. </span>+367 ₽</p>
+                    <p class="delivery__item-info">ул. Академика Королева, 73/3, Петропавловск- Камчатский, <br
+                        class="mobile-no"> 683000</p>
+                  </div>
                 </li>
 
               </ul>
@@ -66,22 +60,16 @@
 
               <ul class="delivery__list">
 
-                <li class="delivery__item delivery__item--active">
-                  <label class="date__label">
-                    <input type="radio" name="date" checked>
-                    <p class="delivery__item-header desktop-no">вт, 25 сен</p>
-                    <p class="delivery__item-header mobile-no">пн, 24 сен — ср, 26 сен</p>
-                    <p class="delivery__item-info">10:00–19:00</p>
-                  </label>
+                <li class="delivery__item item__data">
+                  <p class="delivery__item-header desktop-no">вт, 25 сен</p>
+                  <p class="delivery__item-header mobile-no">пн, 24 сен — ср, 26 сен</p>
+                  <p class="delivery__item-info">10:00–19:00</p>
                 </li>
 
-                <li class="delivery__item">
-                  <label class="date__label">
-                    <input type="radio" name="date">
-                    <p class="delivery__item-header desktop-no">ср, 26 сен</p>
-                    <p class="delivery__item-header mobile-no">чт, 27 сен — пт, 28 сен</p>
-                    <p class="delivery__item-info">10:00–19:00</p>
-                  </label>
+                <li class="delivery__item item__data">
+                  <p class="delivery__item-header desktop-no">ср, 26 сен</p>
+                  <p class="delivery__item-header mobile-no">чт, 27 сен — пт, 28 сен</p>
+                  <p class="delivery__item-info">10:00–19:00</p>
                 </li>
               </ul>
 
@@ -123,7 +111,7 @@
                   <span class="user__info">Имя и фамилия<span class="desktop-no"> как в паспорте</span></span>
                   <select class="user__name user__select" name="user-name">
                     <option>Константин Константинопольский</option>
-                    <option>Вольфганг Вениаминович Константинопольский</option>
+                    <option selected>Вольфганг Вениаминович Константинопольский</option>
                   </select>
                 </div>
 
@@ -201,25 +189,7 @@
 
   </main>
 
-  <script>
-    const summaryToggleOpen = document.querySelector(".button__more");
-    const summaryToggleClose = document.querySelector(".summary__button");
-    const summarySection = document.querySelector(".order__summary");
-
-    summaryToggleOpen.addEventListener("click", function () {
-      if (summarySection.classList.contains("order__summary--closed")) {
-        summarySection.classList.remove("order__summary--closed");
-        summarySection.classList.add("order__summary--opened");
-      };
-    });
-    summaryToggleClose.addEventListener("click", function () {
-      if (summarySection.classList.contains("order__summary--opened")) {
-        summarySection.classList.remove("order__summary--opened");
-        summarySection.classList.add("order__summary--closed");
-      }
-
-    });
-  </script>
+  <script src="/src/popup.js"></script>
 
 </body>
 

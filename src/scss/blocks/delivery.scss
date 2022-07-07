@@ -12,11 +12,7 @@
   gap: 8px;
 }
 
-.delivery__item input[type=radio] {
-  display: none;
-}
-
-.delivery__item label {
+.delivery__item {
   box-sizing: border-box;
   display: inline-block;
   padding: 16px 20px;
@@ -25,7 +21,7 @@
   border-radius: 4px;
 }
 
-.delivery__item--active label {
+.delivery__item:first-child {
   border: 2px solid $blue;
   border-radius: 4px;
 }
@@ -59,12 +55,12 @@
     line-height: 28px
   }
 
-  .delivery__item label {
+  .delivery__item {
     padding: 20px 20px;
     cursor: pointer;
   }
 
-  .delivery__item-labirint label {
+  .delivery__item-labirint {
     padding-top: 34px;
   }
 

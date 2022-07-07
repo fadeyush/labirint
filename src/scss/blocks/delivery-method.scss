@@ -1,4 +1,4 @@
-.method__label {
+.item__method {
   width: 300px;
   height: 114px
 }
@@ -17,8 +17,13 @@
   margin-bottom: 24px;
 }
 
+.list__method .delivery__item:nth-child(1)  {
+  border: 2px solid $blue;
+  border-radius: 4px;
+}
+
 @media (min-width: $desktop-width) {
-  .method__label {
+  .item__method {
     width: 489px;
     height: 152px;
   }
@@ -26,6 +31,16 @@
   .delivery__item {
     position: relative;
   }
+
+  .list__method .delivery__item:nth-child(1)  {
+    border: 1px solid $item-border;
+  }
+
+  .list__method .delivery__item:nth-child(2)  {
+    border: 2px solid $blue;
+    border-radius: 4px;
+  }
+
 
   .delivery__item-price {
     position: absolute;
