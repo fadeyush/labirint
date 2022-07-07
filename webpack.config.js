@@ -22,7 +22,7 @@ module.exports = {
 	},
 	plugins: [
 		new miniCss({
-			filename: '../src/style.css',
+			filename: '../style.css',
 		})
 	]
 };
