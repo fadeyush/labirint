@@ -41,7 +41,6 @@
     border-radius: 4px;
   }
 
-
   .delivery__item-price {
     position: absolute;
     right: 20px;
@@ -80,6 +79,14 @@
     cursor: pointer;
 
     position: relative;
+  }
+
+  .method__button:hover {
+    border-color: $primary-text-color;
+  }
+  
+  .method__button:active {
+    opacity: 0.6;
   }
 
   .method__button::before {

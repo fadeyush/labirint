@@ -16,6 +16,8 @@
 .delivery-checkbox__info {
   display: flex;
   gap: 10px;
+
+  cursor: pointer;
 }
 
 .delivery-checkbox__label>input {
