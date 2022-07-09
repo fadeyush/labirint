@@ -1,6 +1,4 @@
 .order {
-  padding: 0px 16px;
-
   overflow: hidden;
 
   box-sizing: border-box;
@@ -35,6 +33,8 @@
   margin-bottom: 16px;
 
   padding-left: 16px;
+
+  box-sizing: border-box;
 }
 
 .order__button {
